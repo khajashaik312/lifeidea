@@ -1,0 +1,114 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00796b;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-shadow: 2px 2px red;
+}
+
+h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: #ff2600;
+    color: white;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+h4 {
+    margin-top: 40px;
+}
+
+p, ol {
+    color: #333;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.intro p {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.images {
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ff5252;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.contact-info, .contact-form, .image-container {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #00796b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #e0f7fa;
+}
+
+.contact-info .name-tag, .whatsapp-tag {
+    display: block;
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
