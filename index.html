@@ -3,87 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Page Title</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <style>
-    body {
-      overflow-x: hidden;
-      text-align: center;
-      background-color: #15ff00;
-      font-style: italic;
-      font-size: larger;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-    }
-
+  <style> 
     .navbar-brand {
       display: flex;
       align-items: center;
     }
-
     .navbar-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
     }
-
     .navbar-header .jumbotron {
       margin: 0;
     }
-
     p {
-      text-align: center;
-      background: #17fd02;
-      padding: 15px;
+        text-align: center;
+        background: #17fd02;
     }
-
-    .container-fluid {
-      padding: 0;
+    body {
+        text-align: center;
+        background-color: #15ff00;
+        font-style: italic;
+        font-size: larger;
+        font-weight: bold;
     }
-
-    .img-fluid {
-      width: 100%;
-      height: auto;
-      border-radius: 5px; /* Rounded corners for all images */
+    div {
+        text-align: center;
     }
-
     .highlight {
-      background-color: #f0f8ff;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 15px;
+        background-color: #f0f8ff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
     }
-
+    .contact-info {
+        padding: 5px;
+        margin: auto;
+    }
     .contact-section {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-
+    .text-highlight {
+        background-color: #2008fc;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .text-highlight-alt {
+        background-color: #fc5e03;
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
     .badge-custom {
-      font-size: large;
-      background-color: #17a2b8;
-      padding: 5px 10px;
-      border-radius: 5px;
-      color: #fff;
+        font-size: large;
+        background-color: #17a2b8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #fff;
     }
-
     .badge-rupee {
-      font-size: x-large;
-      background-color: rgb(0, 255, 0);
-      padding: 5px 10px;
-      border-radius: 5px;
-      color: #000;
+        font-size: x-large;
+        background-color: rgb(0, 255, 0);
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #000;
     }
-
     .bg-primary {
-      background-color: rgb(255, 0, 0) !important;
+        background-color: rgb(255, 0, 0) !important;
     }
-
-    .bg-info {
-      background-color: rgb(0, 255, 34) !important;
+    .bg-info{
+        background-color: rgb(0, 255, 34) !important;
     }
 
     /* Media Queries */
@@ -91,10 +89,15 @@
       .navbar-header .jumbotron h2, .navbar-header .jumbotron h3 {
         font-size: 1.2rem;
       }
-      .img-fluid {
+      .contact-info {
+        font-size: 0.9rem;
+      }
+      .highlight {
+        padding: 5px;
+      }
+      img {
         width: 100%;
         height: auto;
-        border-radius: 5px; /* Rounded corners for all images */
       }
     }
 
@@ -102,10 +105,15 @@
       .navbar-header .jumbotron h2, .navbar-header .jumbotron h3 {
         font-size: 1.5rem;
       }
-      .img-fluid {
+      .contact-info {
+        font-size: 1rem;
+      }
+      .highlight {
+        padding: 7px;
+      }
+      img {
         width: 100%;
         height: auto;
-        border-radius: 5px; /* Rounded corners for all images */
       }
     }
 
@@ -113,10 +121,15 @@
       .navbar-header .jumbotron h2, .navbar-header .jumbotron h3 {
         font-size: 1.75rem;
       }
-      .img-fluid {
+      .contact-info {
+        font-size: 1.1rem;
+      }
+      .highlight {
+        padding: 8px;
+      }
+      img {
         width: 100%;
         height: auto;
-        border-radius: 5px; /* Rounded corners for all images */
       }
     }
   </style>
@@ -127,12 +140,12 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="Avatar Logo" style="width: 255px;" class="rounded img-fluid">
+        <img src="logo.png" alt="Avatar Logo" style="width: 255px;" class="rounded">
       </a>
       <div class="jumbotron text-center">
         <h2>LIFE IDEA DEVELOPER</h2>
         <h3>
-          <marquee>LIFE IDEAS FOR A BETTER WAY OF LIVING</marquee>
+          <marquee>LIFE IDEAS FOR BETTER WAY OF LIVING</marquee>
           ONE IDEA CAN CHANGE YOUR LIFE
         </h3>
       </div>
@@ -140,94 +153,69 @@
   </div>
 </nav>
 
-<p>EVERYONE IS TRYING TO LIVE A PEACEFUL LIFE, BUT LIFE PRESENTS MANY CHALLENGES. I PROVIDE POSITIVE LIFE SUGGESTIONS TO HELP YOU FACE THESE SITUATIONS.</p>
+<p>EVERY ONE IS TRY TO LIVE A PEACEFULL LIFE BUT LIFE GIVES YOU A LOT OF CIRCUMSTANCES SO HOW TO FACE A SUCH KIND OF SITUATIONS I WILL GIVE YOU A SUGGESTIONS FOR THAT FORTHERLY YOU NEED TO FACE IT & AS A LIFE GUIDER I WILL GIVE YOU A POSSITIVE LIFE SUGGESTIONS ONLY</p>
 
-<div class="container">
-  <div class="row">
-    <div class="col-6 col-md-4">
-      <img src="image1.jpg" alt="Image 1" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image2.jpg" alt="Image 2" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image3.jpg" alt="Image 3" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image4.jpg" alt="Image 4" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image5.jpg" alt="Image 5" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image6.jpg" alt="Image 6" class="img-fluid">
-    </div>
-  </div>
-</div>
+<table align="center" style="background-color: rgb(255, 1, 1);">
+    <tr>
+        <td><img src="image1.jpg" alt="Image 1" width="200" height="200"></td>
+        <td><img src="image2.jpg" alt="Image 2" width="200" height="200"></td>
+        <td><img src="image3.jpg" alt="Image 3" width="200" height="200"></td>
+        <td><img src="image4.jpg" alt="Image 1" width="200" height="200"></td>
+        <td><img src="image5.jpg" alt="Image 2" width="200" height="200"></td>
+        <td><img src="image6.jpg" alt="Image 3" width="200" height="200"></td>
+    </tr>
+</table>
 
-<p>FOR THOSE INTERESTED IN STARTUPS AND BUSINESS, I PROVIDE MARKETING STRATEGIES AND IDEAS BASED ON YOUR BUSINESS PLANS.</p>
+<p>THOSE WHO ARE HAVING INTERESTED IN STARTUP-PLANS AND ALREADY IN BUSSINESS FIELDS I WILL GIVE YOU MARKETING STRATEGIES AND IDEAS BASED ON YOUR BUSSINESS PLANS.</p>
+<br>
+<table align="center" style="background-color: rgb(255, 1, 1);">
+    <tr>
+        <td><img src="image7.jpg" alt="Image 1" width="200" height="200"></td>
+        <td><img src="image8.jpg" alt="Image 2" width="200" height="200"></td>
+        <td><img src="image9.jpg" alt="Image 3" width="200" height="200"></td>
+        <td><img src="image10.jpg" alt="Image 1" width="200" height="200"></td>
+        <td><img src="image11.jpg" alt="Image 2" width="200" height="200"></td>
+        <td><img src="image12.jpg" alt="Image 3" width="200" height="200"></td>
+    </tr>
+</table>
 
-<div class="container">
-  <div class="row">
-    <div class="col-6 col-md-4">
-      <img src="image7.jpg" alt="Image 7" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image8.jpg" alt="Image 8" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image9.jpg" alt="Image 9" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image10.jpg" alt="Image 10" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image11.jpg" alt="Image 11" class="img-fluid">
-    </div>
-    <div class="col-6 col-md-4">
-      <img src="image12.jpg" alt="Image 12" class="img-fluid">
-    </div>
-  </div>
-</div>
-
-<h4 class="text-center" style="font-size: 30px; color: rgb(49, 6, 168); text-shadow: 2px 2px rgb(233, 6, 6);">CHARGES MAY APPLY ON SOLUTIONS</h4>
+<h4 align="center" style="font-size: 30px; color:rgb(49, 6, 168); text-shadow: 2px 2px rgb(233, 6, 6); ">CHARGES MAY APPLY ON SOLUTIONS</h4>
 <hr>
 
 <div class="container">
-  <div class="row justify-content-center contact-section">
-    <div class="col-sm-6 text-center">
-      <p class="contact-info"><span class="label"><i class="fas fa-user"></i> Person:</span> <span class="badge-custom">Mr. I Assistant</span></p>
-      <p class="contact-info"><span class="label"><i class="fab fa-whatsapp"></i> WhatsApp:</span> <span class="badge-custom">+91 9515804720</span></p>
-      <p class="highlight" style="background-color: rgb(255, 0, 0); color: #fff;">
-        <span class="label"><i class="fas fa-envelope"></i> Contact:</span> SEND CONTACT DETAILS THROUGH WHATSAPP
-      </p>
-      <p class="text-highlight">
-        <span class="label"><i class="fas fa-id-badge"></i> Full Name:</span> <br>
-        <span class="label"><i class="fab fa-whatsapp"></i> WhatsApp Number:</span> <br>
-        <span class="label"><i class="fas fa-envelope"></i> Mail ID:</span>
-      </p>
-      <p class="text-highlight-alt">
-        <span class="label"><i class="fas fa-info-circle"></i> Purpose:</span> <br>
-        Startup/Personal
-      </p>
+    <div class="row justify-content-center contact-section">
+        <div class="col-sm-6 text-center">
+            <p class="contact-info"><span class="label"><i class="fas fa-user"></i> Person:</span> <span class="badge-custom">Mr. I Assistant</span></p>
+            <p class="contact-info"><span class="label"><i class="fab fa-whatsapp"></i> WhatsApp:</span> <span class="badge-custom">+91 9515804720</span></p>
+            <p class="highlight" style="background-color: rgb(255, 0, 0); color: #fff;">
+                <span class="label"><i class="fas fa-envelope"></i> Contact:</span> SEND CONTACT DETAILS Through WhatsApp-Number
+            </p>
+            <p class="text-highlight">
+                <span class="label"><i class="fas fa-id-badge"></i> Full-Name:</span> <br> 
+                <span class="label"><i class="fab fa-whatsapp"></i> WhatsApp-Number:</span> <br> 
+                <span class="label"><i class="fas fa-envelope"></i> Mail-Id:</span>
+            </p>
+            <p class="text-highlight-alt">
+                <span class="label"><i class="fas fa-info-circle"></i> Purpose:</span> <br> 
+                Start-up/Personal
+            </p>
+        </div>
+        <div class="col-sm-6 text-center">
+            <img src="phonepay.jpeg" class="img-fluid" alt="Description of Image" style="width: 250px; height: 380px;">
+        </div>
     </div>
-    <div class="col-sm-6 text-center">
-      <img src="phonepay.jpeg" alt="Description of Image" class="img-fluid" style="width: 250px; height: 380px;">
+    <div class="row justify-content-center">
+        <div class="col-sm-12">
+            <h6 class="highlight text-center" style="font-size: large; background-color: rgb(9, 136, 233);">
+                An advance payment of <span class="badge-rupee">₹ 200/-</span> is required. The remaining amount will be determined based on the situation. <br> Mr. I. Assistant will send a time for the appointment via WhatsApp and a video conference link to your email according to the time mentioned on WhatsApp.
+            </h6>
+        </div>
     </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-sm-12">
-      <h6 class="highlight text-center" style="font-size: large; background-color: rgb(9, 136, 233);">
-        An advance payment of <span class="badge-rupee">₹ 200/-</span> is required. The remaining amount will be determined based on the situation. <br> Mr. I. Assistant will send a time for the appointment via WhatsApp and a video conference link to your email according to the time mentioned on WhatsApp.
-      </h6>
-    </div>
-  </div>
-</div>
-<hr>
+</div> <hr>
 
 <footer class="container-fluid bg-info text-dark text-center py-3">
   <p style="background-color: #fc0303; padding: 5px;">Certainly, I'd be glad to offer you some positive life suggestions for facing challenging circumstances and maintaining a peaceful mindset:</p>
-  <p>1. Stay Positive: It's important to maintain a positive mindset even when facing difficulties. Focus on the things you're grateful for and try to view challenges as opportunities for growth.</p>
+  <p>1.  Stay Positive: It's important to maintain a positive mindset even when facing difficulties. Focus on the things you're grateful for and try to view challenges as opportunities for growth.</p>
   <p>2.  Seek Solutions: Instead of dwelling on problems, focus on finding solutions. Brainstorm possible ways to overcome obstacles and take proactive steps towards resolving them.</p>
   <p>3.  Set Realistic Goals: Break down larger challenges into smaller, manageable goals. Achieving these milestones can provide a sense of accomplishment and motivate you to keep moving forward.</p>
   <p>4.  Cultivate Resilience: Resilience is the ability to bounce back from setbacks. Remember that setbacks are a natural part of life. Focus on your strengths and past successes to remind yourself of your ability to overcome difficulties.</p>
