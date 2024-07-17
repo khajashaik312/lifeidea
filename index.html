@@ -11,7 +11,7 @@
     body {
       overflow-x: hidden;
       text-align: center;
-      background-color: #f4f4f9;
+      background: linear-gradient(to right, #0a0a0a, #333333); /* Gradient background */
       font-style: italic;
       font-size: larger;
       font-weight: bold;
@@ -33,19 +33,25 @@
 
     .navbar-header .jumbotron {
       margin: 0;
+      background: linear-gradient(to right, #000000, #444444); /* Gradient background */
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
     }
 
     p {
+      color: #f7f7f7;
       text-align: center;
-      background: #e9ecef;
+      background: linear-gradient(to right, #111111, #222222); /* Gradient background */
       padding: 15px;
+      border-radius: 5px;
     }
 
     .label {
       font-weight: bold;
       margin-right: 10px;
     }
-    
+
     .container-fluid {
       padding: 0;
     }
@@ -53,10 +59,10 @@
     .img-square {
       width: 100%;
       height: auto;
-      border: 5px solid #343a40;
-      border-radius: 10px;
+      border: 5px solid #000; /* Black border */
+      border-radius: 10px; /* Rounded corners */
       object-fit: cover;
-      aspect-ratio: 1/1;
+      aspect-ratio: 1/1; /* Ensures the image is square */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s, box-shadow 0.3s;
     }
@@ -67,23 +73,23 @@
     }
 
     .highlight {
-      background-color: #343a40;
-      color: #ffffff;
+      background: linear-gradient(to right, #fd0202, #fe5858); /* Gradient background */
+      color: #f7f7f7;
       padding: 10px;
       border-radius: 5px;
       margin-bottom: 15px;
     }
 
     .text-highlight {
-      background-color: #007bff;
-      color: #ffffff;
+      background: linear-gradient(to right, rgb(76, 0, 255), rgb(136, 77, 255)); /* Gradient background */
+      color: #fff;
       padding: 15px;
       border-radius: 5px;
     }
 
     .text-highlight-alt {
-      background-color: #6c757d;
-      color: #ffffff;
+      background: linear-gradient(to right, #fc5e03, #ff8e3d); /* Gradient background */
+      color: #fff;
       padding: 15px;
       border-radius: 5px;
     }
@@ -91,8 +97,8 @@
     .contact-section {
       margin-bottom: 20px;
       padding: 20px;
-      background-color: #ffffff;
-      border: 2px solid #343a40;
+      background: linear-gradient(to right, #f8f9fa, #e2e2e2); /* Gradient background */
+      border: 2px solid #000;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -100,7 +106,7 @@
     .contact-info a:hover .badge-custom {
       background-color: #25D366;
       color: white;
-  }
+    }
 
     .badge-custom {
       font-size: large;
@@ -112,25 +118,25 @@
 
     .badge-rupee {
       font-size: x-large;
-      background-color: #28a745;
+      background-color: rgb(0, 255, 0);
       padding: 5px 10px;
       border-radius: 5px;
-      color: #fff;
+      color: #000;
     }
 
     .bg-primary {
-      background-color: #007bff !important;
+      background: linear-gradient(to right, rgb(250, 249, 249), rgb(211, 211, 211)) !important; /* Gradient background */
     }
 
     .bg-info {
-      background-color: #17a2b8 !important;
+      background: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 40, 40)) !important; /* Gradient background */
     }
 
     .phonepay-img {
       width: 300px;
       height: 490px;
-      border: 5px solid #343a40;
-      border-radius: 10px;
+      border: 5px solid #000; /* Black border */
+      border-radius: 10px; /* Rounded corners */
       object-fit: cover;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s, box-shadow 0.3s;
@@ -143,7 +149,7 @@
 
     .logo-highlight {
       padding: 10px;
-      border: 5px solid #343a40;
+      border: 5px solid #000; /* Black border */
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s, box-shadow 0.3s;
@@ -183,9 +189,9 @@
         <img src="logo.png" alt="Avatar Logo" class="rounded img-fluid logo-highlight" style="width: 255px;">
       </a>
       <div class="jumbotron text-center">
-        <h2 style="font-size: 35px; color: #343a40; text-shadow: 3px 1px #adb5bd;">LIFE IDEA DEVELOPER</h2>
-        <h3 style="color:#343a40 ">
-          <marquee style="color: #495057;">LIFE IDEAS FOR A BETTER WAY OF LIVING</marquee>
+        <h2 style="font-size: 35px; text-shadow: 3px 1px rgb(10, 10, 10);">LIFE IDEA DEVELOPER</h2>
+        <h3>
+          <marquee style="color: #0509fc;">LIFE IDEAS FOR A BETTER WAY OF LIVING</marquee>
           ONE IDEA CAN CHANGE YOUR LIFE
         </h3>
       </div>
@@ -243,7 +249,7 @@
   </div>
 </div>
 
-<h4 class="text-center" style="font-size: 30px; color: #343a40; text-shadow: 2px 2px #adb5bd;">CHARGES MAY APPLY ON SOLUTIONS</h4>
+<h4 class="text-center" style="font-size: 30px; color: rgb(254, 253, 255); text-shadow: 2px 2px rgb(233, 6, 6);">CHARGES MAY APPLY ON SOLUTIONS</h4>
 <hr>
 
 <div class="container">
@@ -251,9 +257,7 @@
     <div class="col-sm-6 text-center">
       <p class="contact-info"><span class="label"><i class="fas fa-user"></i> Person:</span> <span class="badge-custom">Mr. I Assistant</span></p>
       <p class="contact-info"><span class="label"><i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=9515804720">WhatsApp:</span> <span class="badge-custom">+91 9515804720</span></a></p>
-      <p class="highlight">
-        <span class="label"><i class="fas fa-envelope"></i> Contact:</span> SEND CONTACT DETAILS THROUGH WHATSAPP
-      </p>
+      <p class="highlight"><span class="label"><i class="fas fa-envelope"></i> Contact:</span> SEND CONTACT DETAILS THROUGH WHATSAPP</p>
       <p class="text-highlight">
         <span class="label"><i class="fas fa-id-badge"></i> Full Name:</span> <br>
         <span class="label"><i class="fab fa-whatsapp"></i> WhatsApp Number:</span> <br>
@@ -270,7 +274,7 @@
   </div>
   <div class="row justify-content-center">
     <div class="col-sm-12">
-      <h6 class="highlight text-center" style="font-size: large; background-color: #007bff;">
+      <h6 class="highlight text-center" style="font-size: large; background-color: rgb(9, 136, 233);">
         An advance payment of <span class="badge-rupee">₹ 200/-</span> is required. The remaining amount will be determined based on the situation. <br> Payments can be made through PhonePe, Google Pay, or Paytm.
       <br><hr>Mr. I. Assistant will send a time for the appointment via WhatsApp and a video conference link to your email according to the time mentioned on WhatsApp.
       </h6>
@@ -278,8 +282,8 @@
   </div>
 </div>
 <hr>
-<footer class="text-center bg-info text-dark py-3">
-  <p style="background-color: #343a40; color:#fff; padding: 5px;"><i class="fas fa-lightbulb">&nbsp; &nbsp; Certainly, I'd be glad to offer you some positive life suggestions for facing challenging circumstances and maintaining a peaceful mindset: </i> </p>
+<footer class="text-center bg-info text-white py-3">
+  <p style="background-color: #fc0303; padding: 5px;"><i class="fas fa-lightbulb">&nbsp; &nbsp; Certainly, I'd be glad to offer you some positive life suggestions for facing challenging circumstances and maintaining a peaceful mindset: </i> </p>
   <p>1. Stay Positive: It's important to maintain a positive mindset even when facing difficulties. Focus on the things you're grateful for and try to view challenges as opportunities for growth.</p>
   <p>2.  Seek Solutions: Instead of dwelling on problems, focus on finding solutions. Brainstorm possible ways to overcome obstacles and take proactive steps towards resolving them.</p>
   <p>3.  Set Realistic Goals: Break down larger challenges into smaller, manageable goals. Achieving these milestones can provide a sense of accomplishment and motivate you to keep moving forward.</p>
