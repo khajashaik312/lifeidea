@@ -11,12 +11,13 @@
     body {
       overflow-x: hidden;
       text-align: center;
-      background: linear-gradient(to right, #0a0a0a, #333333); /* Gradient background */
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Sunset gradient */
       font-style: italic;
       font-size: larger;
       font-weight: bold;
       margin: 0;
       padding: 0;
+      color: #fff;
     }
 
     .navbar-brand {
@@ -33,18 +34,18 @@
 
     .navbar-header .jumbotron {
       margin: 0;
-      background: linear-gradient(to right, #000000, #444444); /* Gradient background */
+      background: linear-gradient(to right, #ff6f61, #de6161); /* Sunset gradient */
       padding: 20px;
       border-radius: 10px;
       color: #fff;
     }
 
     p {
-      color: #f7f7f7;
-      text-align: center;
-      background: linear-gradient(to right, #111111, #222222); /* Gradient background */
+      color: #fff;
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Sunset gradient */
       padding: 15px;
       border-radius: 5px;
+      margin: 10px 0;
     }
 
     .label {
@@ -73,22 +74,22 @@
     }
 
     .highlight {
-      background: linear-gradient(to right, #fd0202, #fe5858); /* Gradient background */
-      color: #f7f7f7;
+      background: linear-gradient(to right, #ff9a8b, #ff6f61); /* Sunset gradient */
+      color: #fff;
       padding: 10px;
       border-radius: 5px;
       margin-bottom: 15px;
     }
 
     .text-highlight {
-      background: linear-gradient(to right, rgb(76, 0, 255), rgb(136, 77, 255)); /* Gradient background */
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Sunset gradient */
       color: #fff;
       padding: 15px;
       border-radius: 5px;
     }
 
     .text-highlight-alt {
-      background: linear-gradient(to right, #fc5e03, #ff8e3d); /* Gradient background */
+      background: linear-gradient(to right, #ff6f61, #de6161); /* Sunset gradient */
       color: #fff;
       padding: 15px;
       border-radius: 5px;
@@ -97,20 +98,20 @@
     .contact-section {
       margin-bottom: 20px;
       padding: 20px;
-      background: linear-gradient(to right, #f8f9fa, #e2e2e2); /* Gradient background */
-      border: 2px solid #000;
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Sunset gradient */
+      border: 5px solid #000;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
     .contact-info a:hover .badge-custom {
-      background-color: #25D366;
+      background-color: #ff6f61;
       color: white;
     }
 
     .badge-custom {
       font-size: large;
-      background-color: #17a2b8;
+      background-color: #ff7e5f; /* Sunset color */
       padding: 5px 10px;
       border-radius: 5px;
       color: #fff;
@@ -118,18 +119,18 @@
 
     .badge-rupee {
       font-size: x-large;
-      background-color: rgb(0, 255, 0);
+      background-color: #feb47b; /* Sunset color */
       padding: 5px 10px;
       border-radius: 5px;
       color: #000;
     }
 
     .bg-primary {
-      background: linear-gradient(to right, rgb(250, 249, 249), rgb(211, 211, 211)) !important; /* Gradient background */
+      background: linear-gradient(to right, #ff6f61, #de6161) !important; /* Sunset gradient */
     }
 
     .bg-info {
-      background: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 40, 40)) !important; /* Gradient background */
+      background: linear-gradient(to right, #ff7e5f, #feb47b) !important; /* Sunset gradient */
     }
 
     .phonepay-img {
@@ -178,6 +179,29 @@
         font-size: 1.75rem;
       }
     }
+
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(to right, #ff6f61, #de6161); /* Sunset gradient */
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer p {
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Sunset gradient */
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    footer h6 {
+      background: linear-gradient(to right, #ff6f61, #de6161); /* Sunset gradient */
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -191,7 +215,7 @@
       <div class="jumbotron text-center">
         <h2 style="font-size: 35px; text-shadow: 3px 1px rgb(10, 10, 10);">LIFE IDEA DEVELOPER</h2>
         <h3>
-          <marquee style="color: #0509fc;">LIFE IDEAS FOR A BETTER WAY OF LIVING</marquee>
+          <marquee style="color: #feb47b;">LIFE IDEAS FOR A BETTER WAY OF LIVING</marquee>
           ONE IDEA CAN CHANGE YOUR LIFE
         </h3>
       </div>
@@ -221,13 +245,12 @@
     <div class="col-6 col-md-2">
       <img src="image6.jpg" alt="Image 6" class="img-fluid img-square">
     </div>
+    </div>
   </div>
-</div>
 
-<p>FOR THOSE INTERESTED IN STARTUPS AND BUSINESS, I PROVIDE MARKETING STRATEGIES AND IDEAS BASED ON YOUR BUSINESS PLANS.</p>
-
-<div class="container">
-  <div class="row">
+    <p>FOR THOSE INTERESTED IN STARTUPS AND BUSINESS, I PROVIDE MARKETING STRATEGIES AND IDEAS BASED ON YOUR BUSINESS PLANS.</p>
+    <div class="container">
+      <div class="row">
     <div class="col-6 col-md-2">
       <img src="image7.jpg" alt="Image 7" class="img-fluid img-square">
     </div>
@@ -249,7 +272,7 @@
   </div>
 </div>
 
-<h4 class="text-center" style="font-size: 30px; color: rgb(254, 253, 255); text-shadow: 2px 2px rgb(233, 6, 6);">CHARGES MAY APPLY ON SOLUTIONS</h4>
+<h4 class="text-center highlight" style="font-size: 30px; text-shadow: 2px 2px #ff6f61;">CHARGES MAY APPLY ON SOLUTIONS</h4>
 <hr>
 
 <div class="container">
@@ -269,12 +292,12 @@
       </p>
     </div>
     <div class="col-sm-6 text-center">
-      <a href="https://paytm.com/" target="_blank" ><img src="phonepay.jpeg" alt="Description of Image" class="img-fluid phonepay-img"></a>
+      <a href="https://paytm.com/" target="_blank"><img src="phonepay.jpeg" alt="Description of Image" class="img-fluid phonepay-img"></a>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-sm-12">
-      <h6 class="highlight text-center" style="font-size: large; background-color: rgb(9, 136, 233);">
+      <h6 class="highlight text-center" style="font-size: large;">
         An advance payment of <span class="badge-rupee">₹ 200/-</span> is required. The remaining amount will be determined based on the situation. <br> Payments can be made through PhonePe, Google Pay, or Paytm.
       <br><hr>Mr. I. Assistant will send a time for the appointment via WhatsApp and a video conference link to your email according to the time mentioned on WhatsApp.
       </h6>
@@ -282,23 +305,23 @@
   </div>
 </div>
 <hr>
-<footer class="text-center bg-info text-white py-3">
-  <p style="background: linear-gradient(to right, #3103fc, #7154f0); padding: 5px; border-radius: 5px;"><i class="fas fa-lightbulb">&nbsp; &nbsp; Certainly, I'd be glad to offer you some positive life suggestions for facing challenging circumstances and maintaining a peaceful mindset: </i> </p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">1. Stay Positive: It's important to maintain a positive mindset even when facing difficulties. Focus on the things you're grateful for and try to view challenges as opportunities for growth.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">2. Seek Solutions: Instead of dwelling on problems, focus on finding solutions. Brainstorm possible ways to overcome obstacles and take proactive steps towards resolving them.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">3. Set Realistic Goals: Break down larger challenges into smaller, manageable goals. Achieving these milestones can provide a sense of accomplishment and motivate you to keep moving forward.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">4. Cultivate Resilience: Resilience is the ability to bounce back from setbacks. Remember that setbacks are a natural part of life. Focus on your strengths and past successes to remind yourself of your ability to overcome difficulties.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">5. Build a Support Network: Surround yourself with friends, family, or a community that offers encouragement and understanding. Sharing your concerns with others can help alleviate stress and provide different perspectives on your situation.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">6. Focus on Self-Care: Take care of your physical, mental, and emotional well-being. Engage in activities that bring you joy, whether it's reading, exercising, spending time in nature, or pursuing a hobby.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">7. Practice Gratitude: Reflect on the positive aspects of your life, no matter how small they may seem. Gratitude can help shift your focus away from challenges and towards the things that bring you happiness.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">8. Embrace Change: Life is constantly changing, and some circumstances are beyond your control. Embrace change as an opportunity for growth and adaptation, rather than something to fear.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">9. Stay Solution-Focused: Instead of dwelling on problems, focus on finding solutions. Brainstorm creative ways to address challenges and explore different options.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">10. Learn from Adversity: Each challenging situation can provide valuable lessons. Take time to reflect on what you've learned and how you can apply these lessons to future situations.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">11. Practice Self-Compassion: Treat yourself with the same kindness and understanding that you would offer to a friend facing a difficult situation. Avoid self-criticism and practice self-compassion instead.</p>
-  <p style="background: linear-gradient(to right, #1c1c1c, #383838); padding: 5px; border-radius: 5px;">12. Visualize Success: Imagine yourself successfully navigating through the challenges you're facing. Visualization can help boost your confidence and create a positive outlook.</p>
+
+<footer>
+  <p style="background: linear-gradient(to right, #ff7e5f, #feb47b); padding: 10px; border-radius: 5px;"><i class="fas fa-lightbulb">&nbsp; &nbsp; Certainly, I'd be glad to offer you some positive life suggestions for facing challenging circumstances and maintaining a peaceful mindset: </i> </p>
+  <p>1. Stay Positive: It's important to maintain a positive mindset even when facing difficulties. Focus on the things you're grateful for and try to view challenges as opportunities for growth.</p>
+  <p>2. Seek Solutions: Instead of dwelling on problems, focus on finding solutions. Brainstorm possible ways to overcome obstacles and take proactive steps towards resolving them.</p>
+  <p>3. Set Realistic Goals: Break down larger challenges into smaller, manageable goals. Achieving these milestones can provide a sense of accomplishment and motivate you to keep moving forward.</p>
+  <p>4. Cultivate Resilience: Resilience is the ability to bounce back from setbacks. Remember that setbacks are a natural part of life. Focus on your strengths and past successes to remind yourself of your ability to overcome difficulties.</p>
+  <p>5. Build a Support Network: Surround yourself with friends, family, or a community that offers encouragement and understanding. Sharing your concerns with others can help alleviate stress and provide different perspectives on your situation.</p>
+  <p>6. Focus on Self-Care: Take care of your physical, mental, and emotional well-being. Engage in activities that bring you joy, whether it's reading, exercising, spending time in nature, or pursuing a hobby.</p>
+  <p>7. Practice Gratitude: Reflect on the positive aspects of your life, no matter how small they may seem. Gratitude can help shift your focus away from challenges and towards the things that bring you happiness.</p>
+  <p>8. Embrace Change: Life is constantly changing, and some circumstances are beyond your control. Embrace change as an opportunity for growth and adaptation, rather than something to fear.</p>
+  <p>9. Stay Solution-Focused: Instead of dwelling on problems, focus on finding solutions. Brainstorm creative ways to address challenges and explore different options.</p>
+  <p>10. Learn from Adversity: Each challenging situation can provide valuable lessons. Take time to reflect on what you've learned and how you can apply these lessons to future situations.</p>
+  <p>11. Practice Self-Compassion: Treat yourself with the same kindness and understanding that you would offer to a friend facing a difficult situation. Avoid self-criticism and practice self-compassion instead.</p>
+  <p>12. Visualize Success: Imagine yourself successfully navigating through the challenges you're facing. Visualization can help boost your confidence and create a positive outlook.</p>
   <p>Remember, facing challenging circumstances is a part of life, and you have the inner strength to overcome them. By adopting a positive mindset and utilizing these suggestions, you can navigate difficulties with grace and resilience while striving for a peaceful and fulfilling life.</p>
 </footer>
-
 
 </body>
 </html>
