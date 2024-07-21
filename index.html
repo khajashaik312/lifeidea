@@ -66,6 +66,7 @@
       aspect-ratio: 1/1; /* Ensures the image is square */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
     }
 
     .img-square:hover {
@@ -126,7 +127,7 @@
     }
 
     .bg-primary {
-      background: linear-gradient(to right, #ff6f61, #de6161) !important; /* Sunset gradient */
+      background: linear-gradient(to right, #ff6f61, #d65555) !important; /* Sunset gradient */
     }
 
     .bg-info {
@@ -228,49 +229,50 @@
 <div class="container">
   <div class="row">
     <div class="col-6 col-md-2">
-      <img src="image1.jpg" alt="Image 1" class="img-fluid img-square">
+      <img src="image1.jpg" alt="Image 1" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image1.jpg">
     </div>
     <div class="col-6 col-md-2">
-      <img src="image2.jpg" alt="Image 2" class="img-fluid img-square">
+      <img src="image2.jpg" alt="Image 2" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image2.jpg">
     </div>
     <div class="col-6 col-md-2">
-      <img src="image3.jpg" alt="Image 3" class="img-fluid img-square">
+      <img src="image3.jpg" alt="Image 3" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image3.jpg">
     </div>
     <div class="col-6 col-md-2">
-      <img src="image4.jpg" alt="Image 4" class="img-fluid img-square">
+      <img src="image4.jpg" alt="Image 4" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image4.jpg">
     </div>
     <div class="col-6 col-md-2">
-      <img src="image5.jpg" alt="Image 5" class="img-fluid img-square">
+      <img src="image5.jpg" alt="Image 5" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image5.jpg">
     </div>
     <div class="col-6 col-md-2">
-      <img src="image6.jpg" alt="Image 6" class="img-fluid img-square">
-    </div>
+      <img src="image6.jpg" alt="Image 6" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image6.jpg">
     </div>
   </div>
+</div>
 
     <p>FOR THOSE INTERESTED IN STARTUPS AND BUSINESS, I PROVIDE MARKETING STRATEGIES AND IDEAS BASED ON YOUR BUSINESS PLANS.</p>
     <div class="container">
       <div class="row">
-    <div class="col-6 col-md-2">
-      <img src="image7.jpg" alt="Image 7" class="img-fluid img-square">
+        <div class="col-6 col-md-2">
+          <img src="image7.jpg" alt="Image 7" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image7.jpg">
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="image8.jpg" alt="Image 8" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image8.jpg">
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="image9.jpg" alt="Image 9" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image9.jpg">
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="image10.jpg" alt="Image 10" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image10.jpg">
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="image11.jpg" alt="Image 11" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image11.jpg">
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="image12.jpg" alt="Image 12" class="img-fluid img-square" data-toggle="modal" data-target="#imageModal" data-imgsrc="image12.jpg">
+        </div>
+      </div>
     </div>
-    <div class="col-6 col-md-2">
-      <img src="image8.jpg" alt="Image 8" class="img-fluid img-square">
-    </div>
-    <div class="col-6 col-md-2">
-      <img src="image9.jpg" alt="Image 9" class="img-fluid img-square">
-    </div>
-    <div class="col-6 col-md-2">
-      <img src="image10.jpg" alt="Image 10" class="img-fluid img-square">
-    </div>
-    <div class="col-6 col-md-2">
-      <img src="image11.jpg" alt="Image 11" class="img-fluid img-square">
-    </div>
-    <div class="col-6 col-md-2">
-      <img src="image12.jpg" alt="Image 12" class="img-fluid img-square">
-    </div>
-  </div>
-</div>
+    
 
 <h4 class="text-center highlight" style="font-size: 30px; text-shadow: 2px 2px #ff6f61;">CHARGES MAY APPLY ON SOLUTIONS</h4>
 <hr>
@@ -304,6 +306,24 @@
     </div>
   </div>
 </div>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Preview Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <footer>
@@ -322,6 +342,29 @@
   <p>12. Visualize Success: Imagine yourself successfully navigating through the challenges you're facing. Visualization can help boost your confidence and create a positive outlook.</p>
   <p>Remember, facing challenging circumstances is a part of life, and you have the inner strength to overcome them. By adopting a positive mindset and utilizing these suggestions, you can navigate difficulties with grace and resilience while striving for a peaceful and fulfilling life.</p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  // Smooth scrolling for links
+  $('a').on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
 
+  // Image modal
+  $('#imageModal').on('show.bs.modal', function(event) {
+    var button = $(event.relatedTarget);
+    var imgSrc = button.data('imgsrc');
+    var modal = $(this);
+    modal.find('.modal-body img').attr('src', imgSrc);
+  });
+</script>
 </body>
 </html>
