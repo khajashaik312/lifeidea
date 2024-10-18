@@ -31,7 +31,7 @@
   
   <style>
     body {
-      overflow-x: hidden;
+      overflow-x: hidden
       text-align: center;
       background: linear-gradient(to right, #e91a1a, #3528e7); /* Gradient background */
       font-style: italic;
@@ -202,6 +202,12 @@
         font-size: 1.75rem;
       }
     }
+
+    #randomColorLink {
+            font-size: 20px; /* Example font size */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s ease; /* Smooth transition */
+        }
   </style>
   
 </head>
@@ -332,7 +338,7 @@ Examples of websites we build:<br>
   <div class="row justify-content-center contact-section">
     <div class="col-sm-6 text-center">
       <p class="contact-info"><span class="label"><i class="fas fa-user"></i> Person:</span> <span class="badge-custom">Mr. I Assistant</span></p>
-      <p class="contact-info"><span class="label"><i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=9515804720">WhatsApp:</span> <span class="badge-custom">+91 9515804720</span></a></p>
+      <p class="contact-info"><span class="label"><i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=9515804720" id="randomColorLink">WhatsApp:</span> <span class="badge-custom">+91 9515804720</span><span class="badge-custom">CLICK HERE TO CONNECT</span></a></p>
       <p class="highlight"><span class="label"><i class="fas fa-envelope"></i> Contact:</span> SEND CONTACT DETAILS THROUGH WHATSAPP</p>
       <p class="text-highlight">
         <span class="label"><i class="fas fa-id-badge"></i> Full Name:</span> <br>
@@ -434,5 +440,22 @@ Examples of websites we build:<br>
     modal.find('.modal-body img').attr('src', imgSrc);
   });
 </script>
+
+  <script>
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        const link = document.getElementById('randomColorLink');
+
+        setInterval(() => {
+            link.style.color = getRandomColor();
+        }, 500); // Change color every 500 milliseconds
+    </script>
 </body>
 </html>
